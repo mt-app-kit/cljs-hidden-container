@@ -3,10 +3,10 @@
 
 ### Overview
 
-The <strong>cljs-temporary-component</strong> is a simple ClojureScript tool that
-appends the passed Reagent component to the React-tree into a hidden container
-then applies a callback function. Useful to append one-use functional elements
-such as hidden buttons, hidden inputs, etc.
+The <strong>cljs-temporary-component</strong> is a simple ClojureScript tool
+which turns a Reagent component into a DOM element object and appends it to the DOM-tree
+within a hidden container then applies a callback function. Useful to append one-use
+functional elements such as hidden buttons, hidden inputs, etc.
 
 ### Documentation
 
@@ -31,18 +31,19 @@ The <strong>cljs-temporary-component</strong> functional documentation is [avail
 
 You can track the changes of the <strong>cljs-temporary-component</strong> library [here](CHANGES.md).
 
+# Usage
+
 ### Index
 
 - [How to append a Reagent component?](#how-to-append-a-reagent-component)
 
 - [How to remove the appended component?](#how-to-remove-the-appended-component)
 
-# Usage
-
-### How append a Reagent component?
+### How to append a Reagent component?
 
 The [`temporary-component.api/append-component!`](documentation/cljc/temporary-component/API.md/#append-component)
-function appends the passed Reagent component to the React-tree into a hidden container.
+function turns the passed Reagent component into a DOM element object and appends
+it to the DOM-tree within a hidden container.
 Only one component could be appended at a time, this function always removes the
 previously appended component.
 
@@ -53,13 +54,13 @@ previously appended component.
 (append-component! [my-component])
 ```
 
-As its third (optional) parameter the `append-component!` function takes a callback
-function that will be called after the component rendered.
+As its second (optional) parameter the `append-component!` function takes a callback
+function that will be called after the component appended.
 
 ```
 (defn my-button
   []
-  [:a#my-button {:href "/my-link"}])
+  [:a {:id :my-button :href "/my-link"}])
 
 (defn click-my-button!
   []
@@ -68,10 +69,22 @@ function that will be called after the component rendered.
 (append-component! [my-button] click-my-button!)
 ```
 
-### How remove the appended component?
+```
+(defn my-input
+  []
+  [:input {:id :my-input :value "My value"}])
+
+(defn print-my-value!
+  []
+  (println (.-value (.getElementById js/document "my-input"))))
+
+(append-component! [my-input] print-my-value!)
+```
+
+### How to remove the appended component?
 
 The [`temporary-component.api/remove-component!`](documentation/cljc/temporary-component/API.md/#remove-component)
-function removes the last appended component from the React-tree.
+function removes the last appended component from the DOM-tree.
 
 ```
 (remove-component!)

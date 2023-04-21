@@ -13,18 +13,18 @@
   []
   (let [body-element        (dom/get-body-element)
         temporary-container (dom/create-element! "div")]
-       (dom/set-element-id!    temporary-container "temporary-element")
+       (dom/set-element-id!    temporary-container "temporary-container")
        (dom/set-element-style! temporary-container {:display :none})
-       (dom/append-element!    environment-element temporary-container)))
+       (dom/append-element!    body-element temporary-container)))
 
 (defn remove-container!
   ; @ignore
   ;
   ; @return (DOM-element)
   []
-  (if-let [temporary-container (dom/get-element-by-id "temporary-element")]
+  (if-let [temporary-container (dom/get-element-by-id "temporary-container")]
           (let [body-element (dom/get-body-element)]
-               (dom/remove-child! environment-element temporary-container))))
+               (dom/remove-child! body-element temporary-container))))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -41,17 +41,13 @@
   ; (defn my-button [] [:a {:href "foo/bar"}])
   ; (defn click-my-button! [] ...)
   ; (append-component! [my-button] click-my-button!)
-  ([component]
-   (remove-container!)
-   (create-container!)
-   (let [temporary-container (dom/get-element-by-id "temporary-element")]
-        (reagent/render component temporary-container)))
-
-  ([component callback-f]
-   (remove-container!)
-   (create-container!)
-   (let [temporary-container (dom/get-element-by-id "temporary-element")]
-        (reagent/render component temporary-container callback-f))))
+  [component & [callback-f]]
+  (remove-container!)
+  (create-container!)
+  (if-let [temporary-container (dom/get-element-by-id "temporary-container")]
+          (let [component-element (-> component reagent/render-to-string dom/parse-html)]
+               (dom/append-element! temporary-container component-element)
+               (if callback-f (callback-f)))))
 
 (defn remove-component!
   ; @usage
