@@ -4,8 +4,8 @@
 ### Overview
 
 The <strong>cljs-temporary-component</strong> is a simple ClojureScript tool
-which turns a Reagent component into a DOM element object and appends it to the DOM-tree
-within a hidden container then applies a callback function. Useful to append one-use
+which parses a Reagent component to a DOM element object and appends it to the DOM-tree
+within a hidden container then applies a callback function. Useful to append disposable
 functional elements such as hidden buttons, hidden inputs, etc.
 
 ### Documentation
@@ -42,7 +42,7 @@ You can track the changes of the <strong>cljs-temporary-component</strong> libra
 ### How to append a Reagent component?
 
 The [`temporary-component.api/append-component!`](documentation/cljc/temporary-component/API.md/#append-component)
-function turns the passed Reagent component into a DOM element object and appends
+function parses the passed Reagent component to a DOM element object and appends
 it to the DOM-tree within a hidden container.
 Only one component could be appended at a time, this function always removes the
 previously appended component.
