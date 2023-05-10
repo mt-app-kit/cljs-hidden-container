@@ -1,7 +1,7 @@
 
 (ns temporary-component.side-effects
-    (:require [dom.api     :as dom]
-              [reagent.api :as reagent]))
+    (:require [dom.api              :as dom]
+              [hiccup-converter.api :as hiccup-converter]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -45,7 +45,7 @@
   (remove-container!)
   (create-container!)
   (if-let [temporary-container (dom/get-element-by-id "temporary-container")]
-          (let [component-element (-> component reagent/render-to-string dom/parse-html)]
+          (let [component-element (-> component hiccup-converter/to-html dom/parse-html)]
                (dom/append-element! temporary-container component-element)
                (if callback-f (callback-f)))))
 
