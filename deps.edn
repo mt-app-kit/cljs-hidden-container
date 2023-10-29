@@ -3,4 +3,4 @@
  :deps  {bithandshake/cljc-hiccup-converter {:git/url "https://github.com/bithandshake/cljc-hiccup-converter"
                                              :sha     "df8c1746c20bf7e22466dcca8261759c16b2f983"}
          bithandshake/cljs-dom              {:git/url "https://github.com/bithandshake/cljs-dom"
-                                             :sha     "9034f87d6ade1388ea0b3d22082bb0f15112c8d1"}}}
+                                             :sha     "27ec90a115770756ec21eda0396aba10d95f8f54"}}}
