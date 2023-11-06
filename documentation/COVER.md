@@ -1,7 +1,11 @@
 
-# cljs-temporary-component documentation
+### cljs-temporary-component
 
-Documentation of the [cljs-temporary-component](https://github.com/bithandshake/cljs-temporary-component) ClojureScript library
+Functional documentation of the [cljs-temporary-component](https://github.com/bithandshake/cljs-temporary-component) ClojureScript library
+
+---
+
+
 
 ##### [README](../README.md) > DOCUMENTATION
 
@@ -11,5 +15,5 @@ Documentation of the [cljs-temporary-component](https://github.com/bithandshake/
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 

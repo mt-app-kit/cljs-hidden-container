@@ -1,5 +1,9 @@
 
-# temporary-component.api ClojureScript namespace
+### temporary-component.api
+
+Functional documentation of the temporary-component.api ClojureScript namespace
+
+---
 
 ##### [README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > temporary-component.api
 
@@ -8,6 +12,8 @@
 - [append-component!](#append-component)
 
 - [remove-component!](#remove-component)
+
+---
 
 ### append-component!
 
@@ -91,5 +97,5 @@
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 
