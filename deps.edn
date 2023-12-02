@@ -1,7 +1,7 @@
 
 {:paths ["source-code/cljs"]
  :deps  {bithandshake/cljc-hiccup-converter {:git/url "https://github.com/bithandshake/cljc-hiccup-converter"
-                                             :sha     "e927d4aad43fae37d33415d7cecad58b19c9d635"}
+                                             :sha     "8d17db2eae763d43879334d33118c50cdd9555b6"}
          bithandshake/cljs-dom              {:git/url "https://github.com/bithandshake/cljs-dom"
-                                             :sha     "f04e01974f996c9e49b7f348d481675f22d08cbf"}
+                                             :sha     "165c2c2db8a8c1b81951bd28d9471b4af87f1cfe"}
          org.clojure/clojurescript          {:mvn/version "1.10.891"}}}
