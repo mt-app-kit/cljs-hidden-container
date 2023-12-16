@@ -10,7 +10,7 @@ functional elements such as hidden buttons, hidden inputs, etc.
 
 ### Documentation
 
-The <strong>cljs-temporary-component</strong> functional documentation is [available here](documentation/COVER.md).
+The <strong>cljs-temporary-component</strong> functional documentation is [available here](https://bithandshake.github.io/cljs-temporary-component).
 
 ### deps.edn
 
@@ -25,7 +25,7 @@ Check out the latest commit on the [release branch](https://github.com/bithandsh
 
 ### Documentation
 
-The <strong>cljs-temporary-component</strong> functional documentation is [available here](documentation/COVER.md).
+The <strong>cljs-temporary-component</strong> functional documentation is [available here](https://bithandshake.github.io/cljs-temporary-component).
 
 ### Changelog
 
