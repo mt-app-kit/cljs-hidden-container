@@ -1,5 +1,5 @@
 
-(ns temporary-component.side-effects
+(ns temporary-components.side-effects
     (:require [dom.api              :as dom]
               [hiccup-converter.api :as hiccup-converter]))
 
