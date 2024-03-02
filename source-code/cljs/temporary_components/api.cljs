@@ -1,10 +1,10 @@
 
-(ns temporary-components.api
-    (:require [temporary-components.side-effects :as side-effects]))
+(ns hidden-container.api
+    (:require [hidden-container.side-effects :as side-effects]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @redirect (temporary-components.side-effects/*)
+; @redirect (hidden-container.side-effects/*)
 (def append-component! side-effects/append-component!)
 (def remove-component! side-effects/remove-component!)

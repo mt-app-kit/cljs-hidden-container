@@ -1,32 +1,32 @@
 
-# cljs-temporary-components
+# cljs-hidden-container
 
 ### Overview
 
-The <strong>cljs-temporary-components</strong> is a simple ClojureScript tool
+The <strong>cljs-hidden-container</strong> is a simple ClojureScript tool
 for parsing a Reagent component to a DOM element object and appending it to the DOM tree
 within a hidden container then applying a callback function. Useful to append disposable
 functional elements such as hidden buttons, hidden inputs, etc.
 
 ### Documentation
 
-The <strong>cljs-temporary-components</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-temporary-components).
+The <strong>cljs-hidden-container</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-hidden-container).
 
 ### deps.edn
 
 ```
-{:deps {mt-app-kit/cljs-temporary-components {:git/url "https://github.com/mt-app-kit/cljs-temporary-components"
-                                              :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
+{:deps {mt-app-kit/cljs-hidden-container {:git/url "https://github.com/mt-app-kit/cljs-hidden-container"
+                                          :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
 
-Check out the latest commit on the [release branch](https://github.com/mt-app-kit/cljs-temporary-components/tree/release).
+Check out the latest commit on the [release branch](https://github.com/mt-app-kit/cljs-hidden-container/tree/release).
 
 ### Documentation
 
-The <strong>cljs-temporary-components</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-temporary-components).
+The <strong>cljs-hidden-container</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-hidden-container).
 
 ### Changelog
 
-You can track the changes of the <strong>cljs-temporary-components</strong> library [here](CHANGES.md).
+You can track the changes of the <strong>cljs-hidden-container</strong> library [here](CHANGES.md).

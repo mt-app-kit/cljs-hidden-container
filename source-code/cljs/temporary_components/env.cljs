@@ -1,5 +1,5 @@
 
-(ns temporary-components.env
+(ns hidden-container.env
     (:require [dom.api :as dom]))
 
 ;; ----------------------------------------------------------------------------
