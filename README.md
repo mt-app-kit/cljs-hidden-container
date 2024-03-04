@@ -3,10 +3,8 @@
 
 ### Overview
 
-The <strong>cljs-hidden-container</strong> is a simple ClojureScript tool
-for parsing a Reagent component to a DOM element object and appending it to the DOM tree
-within a hidden container then applying a callback function. Useful to append disposable
-functional elements such as hidden buttons, hidden inputs, etc.
+The <strong>cljs-hidden-container</strong> is a simple ClojureScript tool for parsing Reagent components
+to DOM element objects and appending them to the DOM tree within a hidden container.
 
 ### Documentation
 
