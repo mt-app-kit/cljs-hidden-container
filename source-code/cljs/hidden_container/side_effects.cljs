@@ -1,9 +1,9 @@
 
 (ns hidden-container.side-effects
     (:require [reagent.dom.server]
-              [dom.api :as dom]
-              [time.api :as time]
-              [hidden-container.env :as env]))
+              [dom.api              :as dom]
+              [hidden-container.env :as env]
+              [time.api             :as time]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
