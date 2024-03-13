@@ -22,10 +22,10 @@
   ; @return (DOM-element)
   [container-id]
   (let [body-element (dom/get-body-element) temporary-container (dom/create-element! "div")]
-       (dom/set-element-attribute! temporary-container "data-container-name" "temporary-container")
-       (dom/set-element-attribute! temporary-container "data-container-id"   (name container-id))
-       (dom/set-element-style!     temporary-container {:display :none})
-       (dom/append-element!        body-element temporary-container)))
+       (dom/set-element-attribute!    temporary-container "data-container-name" "temporary-container")
+       (dom/set-element-attribute!    temporary-container "data-container-id"   (name container-id))
+       (dom/set-element-inline-style! temporary-container {:display :none})
+       (dom/append-element!           body-element temporary-container)))
 
 (defn remove-container!
   ; @ignore
@@ -42,7 +42,7 @@
   [container-id]
   (if-let [temporary-container (env/get-container container-id)]
           (let [body-element (dom/get-body-element)]
-               (dom/remove-child! body-element temporary-container))))
+               (dom/remove-child-element! body-element temporary-container))))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
