@@ -6,10 +6,6 @@
 The <strong>cljs-hidden-container</strong> is a simple ClojureScript tool for parsing Reagent components
 to DOM element objects and appending them to the DOM tree within a hidden container.
 
-### Documentation
-
-The <strong>cljs-hidden-container</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-hidden-container).
-
 ### deps.edn
 
 ```
@@ -21,10 +17,10 @@ The <strong>cljs-hidden-container</strong> functional documentation is [availabl
 
 Check out the latest commit on the [release branch](https://github.com/mt-app-kit/cljs-hidden-container/tree/release).
 
-### Documentation
-
-The <strong>cljs-hidden-container</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-hidden-container).
-
 ### Changelog
 
 You can track the changes of the <strong>cljs-hidden-container</strong> library [here](CHANGES.md).
+
+# Documentation
+
+The <strong>cljs-hidden-container</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-hidden-container).
