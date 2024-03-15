@@ -23,7 +23,7 @@
   [container-id]
   (let [body-element (dom/get-body-element) temporary-container (dom/create-element! "div")]
        (dom/set-element-attribute!    temporary-container "data-container-name" "temporary-container")
-       (dom/set-element-attribute!    temporary-container "data-container-id"   (name container-id))
+       (dom/set-element-attribute!    temporary-container "data-container-id" (name container-id))
        (dom/set-element-inline-style! temporary-container {:display :none})
        (dom/append-element!           body-element temporary-container)))
 
@@ -60,7 +60,7 @@
 
 (defn append-component!
   ; @description
-  ; - Parses the given Reagent component into DOM Element object, then appends it to the DOM tree.
+  ; - Parses the given Reagent component into a DOM Element object, and appends it to the DOM tree.
   ; - Applies the given 'callback-f' function (if provided) when the component is appended.
   ; - Automatically removes the appended component when its lifetime is elapsed in case the '{:auto-remove? true}' setting is provided.
   ;
@@ -77,7 +77,7 @@
   ; (defn my-anchor        [] [:a {:id :my-anchor :href "/my-uri"}])
   ; (defn click-my-anchor! [] (-> (.getElementById js/document "my-anchor") .click))
   ;
-  ; (append-component! [my-anchor] click-my-anchor!)
+  ; (append-component! :my-component [my-anchor] {:callback-f click-my-anchor!})
   ([component-id component]
    (append-component! component-id component {}))
 
