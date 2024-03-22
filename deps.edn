@@ -3,6 +3,6 @@
  :deps  {mt-utilities/cljc-time      {:git/url "https://github.com/mt-utilities/cljc-time"
                                       :sha     "46082e5ba96db821e2027e3a5d1dfbc3ae445705"}
          mt-utilities/cljs-dom       {:git/url "https://github.com/mt-utilities/cljs-dom"
-                                      :sha     "644afffe367f99c8f4f518c61eaad8cb5329fe12"}
+                                      :sha     "a6cee55cfbb533cd86e95f85fe456875f61eb817"}
          org.clojure/clojurescript   {:mvn/version "1.10.891"}
          reagent/reagent             {:mvn/version "1.2.0"}}}
