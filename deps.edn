@@ -1,8 +1,8 @@
 
 {:paths ["source-code/cljs"]
  :deps  {mt-utilities/cljc-time      {:git/url "https://github.com/mt-utilities/cljc-time"
-                                      :sha     "e88ec3fb119d2ebbb5dd077149e20b3267552753"}
+                                      :sha     "f9e5466938f549e9690d9f2dbea880de71c64b9e"}
          mt-utilities/cljs-dom       {:git/url "https://github.com/mt-utilities/cljs-dom"
-                                      :sha     "9cc64981a022d030cc78c1ae70de7f8b8aa683a0"}
+                                      :sha     "3c958fdb078640b928aefb30f5b644443809858b"}
          org.clojure/clojurescript   {:mvn/version "1.10.891"}
          reagent/reagent             {:mvn/version "1.2.0"}}}
